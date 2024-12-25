@@ -7,6 +7,20 @@
       width: 200px;
       padding: 10px;
     }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .input-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    input[type="number"] {
+      width: 60px;
+      padding: 4px;
+    }
     button {
       width: 100%;
       padding: 8px;
@@ -22,7 +36,13 @@
   </style>
 </head>
 <body>
-  <button id="konami">コナミコマンド実行</button>
+  <div class="container">
+    <div class="input-group">
+      <label for="rotations">だるま回転回数:</label>
+      <input type="number" id="rotations" min="1" max="10" value="3">
+    </div>
+    <button id="konami">コナミコマンド実行</button>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
