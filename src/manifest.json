@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "X Daruma Spinner",
+  "version": "1.0",
+  "description": "コナミコマンドでXのだるまを回転させる拡張機能",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*.twitter.com/*",
+    "*://*.x.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
